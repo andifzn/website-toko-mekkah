@@ -1,0 +1,904 @@
+:root {
+    --mainColor : #0d0907;
+    --textColor : #FFA500;
+    --shadow : 0 2px 2px rgba(0,0,0,0.5);
+    --boxShadow : 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-color: #0a0a0a;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Navbar Section */
+header {
+    font-family: 'Cairo', sans-serif;
+    color: white;
+    backdrop-filter: blur(3px); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 25px 0 25px;
+    z-index: 9999;
+    max-width: 100vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-menu a {
+    font-weight: 550;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: var(--textColor);
+}
+
+.navbar-menu :nth-child(-n+3)::after {
+    content: '|';
+    margin-left: 10px;
+    color: white;
+}
+
+
+#contact-button {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    background-color: var(--textColor);
+    padding: 3px 15px;
+    border-radius: 15px;
+}
+
+main {
+    height: auto;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-text h2 {
+    letter-spacing: 1.5px;
+    position: relative;
+    color: var(--textColor);
+}
+
+.hero-text p {
+    font-weight: 550;
+    font-size: 2.3rem;
+    letter-spacing: 1.3px;
+    width: 60%;
+    margin: 2rem 0 1rem 0;
+}
+
+
+.hero-button {
+    margin: 2rem 0;
+}
+
+.hero-button a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(--textColor);
+    color: white;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px ;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.hero-button a:hover {
+    transform: scale(1.15);
+    transition: transform 1 ease;
+}
+
+.tag-list {
+    width: 50rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    width: max-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 10s linear infinite;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0 0.2rem;
+    font-size: 2rem;
+    padding: 0.7rem 1rem;
+    
+}
+
+.tag::after {
+    content: '|';
+    margin-left: 2rem;
+    color: white;
+}
+
+.fade {
+    position: absolute;
+    /* background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b); */
+    inset: 0;
+    pointer-events: none;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+    
+}
+
+/* Best Seller Section */
+.best-seller {
+    height: auto;
+    color: white;
+}
+
+.best-seller-heading {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 4rem;
+}
+
+.best-seller-heading h3 {
+    position: relative;
+    width: max-content;
+    margin: auto;
+    padding: 0 2.2rem;
+}
+
+.best-seller-heading h3::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30px;
+    background-color: var(--textColor);
+    top: 50%;
+    left: 0;
+}
+
+.best-seller-heading h3::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30px;
+    background-color: var(--textColor);
+    top: 50%;
+    right: 0;
+}
+
+.best-seller-heading h1 {
+    font-size: 2.3rem;
+}
+
+.best-seller-cards {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}   
+
+.best-seller-items {
+    position: relative;
+    color: var(--mainColor);
+    box-shadow: 0 0 7px rgba(255, 255, 255, 0.60);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 0 1 200px;
+    max-width: 220px;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.best-seller-items {
+    transition: opacity 0.3s ease-in;
+}
+
+/* .best-seller-cards {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+
+}
+
+.best-seller-items {
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    flex-shrink: 0;
+    width: 350px;
+    background-color: whi;
+} */
+
+  /* Saat salah satu item di-hover, item lain dikasih kelas ini */
+.best-seller-items.faded {
+    opacity: 0.3;
+}
+
+.best-seller-items img {
+    height: 100%;
+    width: 100%;
+    border-radius:10px 10px 0 0 ;
+    -webkit-border-radius:10px 10px 0 0 ;
+    -moz-border-radius:10px 10px 0 0 ;
+    -ms-border-radius:10px 10px 0 0 ;
+    -o-border-radius:10px 10px 0 0 ;
+}
+
+.rating-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.badge {
+    background-color: #FFA500;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+
+.rating-tag img {
+    height: 16px;
+    width: 16px;
+}
+
+
+.text-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+
+.text-card h4 {
+    padding-left: 4px;
+
+}
+
+.text-card h3 {
+    color: var(--textColor);
+    padding: 0 4px;
+}
+
+
+.text-card a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: var(--textColor);
+    width: max-content;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+.text-card a:hover {
+    transform: scale(1.05);
+}
+
+/* About Section Start*/
+.about {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 5rem;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 2%;
+    background-color: #1e1e1e;
+    height: 55%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.about-text {
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    flex: 1;
+}
+
+.about-text h3 {
+    position: relative;
+    width: max-content;
+    padding-left: 1.2rem;
+}
+
+.about-text h3::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 1rem;
+    bottom: 50%;
+    left: 0;
+    background-color: var(--textColor);
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+#about-toko-mekkah {
+    font: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.about-text a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    background-color: var(--textColor);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in;
+}
+
+.about-text a:hover {
+    transform: scale(1.1);
+}
+
+.value {
+    width: 100%;
+    height: auto;
+    margin: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolom */
+    gap: 10px 20px;
+}
+
+.value-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--textColor);
+    font-weight: 550;
+}
+
+.value-items p {
+    position: relative;
+    margin: 10px 0;
+}
+
+.about-text .value-items a {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text .value-items img {
+    height: 32px;
+    padding: 0;
+}
+
+
+
+
+/* Ukuran Laptop */
+@media screen and (max-width: 1366px) {
+    /* Hero Section */
+    .hero-image img {
+        height: 105px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-text p {
+        font-size: 1.9rem;
+    }
+
+    .tag {
+        font-size: 1.5rem;
+    }
+
+    /* About Section In Laptop */
+    .about img {
+        height: 120px;
+        width: auto;
+    }
+
+    .value-items {
+        font-size: 0.8rem;
+    }
+
+
+    .value-items:nth-child(odd) {
+        width: 110%;
+    }
+
+    .value-items:nth-child(even){
+        width: 90%;
+    }
+
+    /* Product section start */
+    .product {
+        height: 100dvh;
+    }
+
+    .product-header {
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .product-menu {
+        display: flex;
+        justify-content: center;
+        gap: 0 1rem;
+    }
+
+    .product-menu a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        border: 2px solid var(--textColor);
+        border-radius: 15px;
+        position: relative;
+    }
+
+    /* .product-menu a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        background-color: var(--textColor);
+        left: 0;
+        bottom: 0;
+    } */
+    
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 1024px) {
+    /* Hero Section */
+    .hero-image img {
+        height: 95px;
+    }
+
+    .hero-text h2 {
+        font-size: 1rem;
+    }
+
+    .hero-text p {
+        font-size: 1.5rem;
+    }
+
+    .tag-list {
+        width: 40rem;
+    }
+
+    .tag {
+        font-size: 1rem;
+        padding: 0.7rem 0.2rem;
+    }
+
+    .tag::after {
+        content: '|';
+        margin-left: 0.9rem;
+        color: white;
+    }
+
+    .hero-button a {
+        padding: 8px;
+    }
+
+    /* About Section Start In Tablet */
+    .about-image img {
+        height: 100px;
+    }
+
+    .about-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #about-toko-mekkah {
+        font-size: 0.9rem;
+    }
+
+    .about-text a {
+        font-size: 0.9rem;
+    }
+
+    .value {
+        gap: 5px 40px;
+    }
+
+    .value-items {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .value-items {
+        font-size: 0.7rem;
+        gap: 10px;
+    }
+
+    .about-text .value-items img {
+        height: 28px;
+    }
+
+}
+
+/* Ukuran Handphone Umum */
+@media screen and (max-width: 768px) {
+    /* Navbar Section */
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        position: absolute;
+        flex-direction: column;
+        gap: 3rem 0;
+        width:60%;
+        min-height: 100vh;
+        top: -59%;
+        padding: 23px 25px;
+        right: -1000%;
+        background-color: #0a0a0a;
+        transition: right 0.2s ease-in-out;
+        -webkit-transition: right 0.2s ease-in-out;
+        -moz-transition: right 0.2s ease-in-out;
+        -ms-transition: right 0.2s ease-in-out;
+        -o-transition: right 0.2s ease-in-out;
+    }
+
+    .navbar-menu a {
+        position: relative;
+    }
+
+    .navbar-menu a::after {
+        content: "";
+        position: absolute;
+        left: 0%;
+        bottom: -7px;
+        width: 0%;
+        height: 2px;
+        background-color: var(--textColor);
+        transition: width 0.3s ease-in-out;
+    }
+
+    .navbar-menu a:hover::after {
+        width: 40%;
+    }
+
+    .navbar-menu :nth-child(-n+3)::after {
+        content: '';
+        margin-left: 0;
+    }
+
+    .navbar-menu.active {
+        right: -8%;
+    }
+
+    #contact-button {
+        display: block;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        background-color: transparent;;
+    }
+
+    /* Hero Section */
+
+    .hero-text p {
+        font-size: 1.3rem;
+    }
+
+    .tag-list {
+        width: 30rem;
+    }
+
+    /* About Section in Handphone Besar */
+    .about {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5rem 0;
+        padding: 5rem 2rem;
+        height: auto;
+    }
+
+    .about-image {
+        background-color: transparent;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .about-text {
+        flex: 0;
+        width: 85%;
+    }
+
+}
+
+
+/* Ukuran Hanphone Sedang */
+@media screen and (max-width: 576px) {
+    .hero-text p {
+        width: 85%;
+        font-size: 1.3rem;
+    }
+
+    .tag-list {
+        width: 25rem;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+    }
+
+    /* Best Seller Section Start*/
+    .best-seller-items {
+        width: 24%;
+        height: 80%;
+        flex-grow: 0 1 800px;
+        max-width: 800px;
+    }
+
+    .best-seller-items img {
+        width: 100%;
+    }
+
+    .badge{
+        font-size: 0.7rem;
+        width: max-content;
+    }
+
+    .rating p {
+        font-size: 0.8rem;
+    }
+
+    .rating-tag {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px 0;
+    }
+
+    .rating-tag img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .text-card {
+        padding: 10px 7px;
+        height: 80%;
+    }
+
+    .text-card h4,h3 {
+        font-size: 0.7rem;
+    }
+
+    .text-card a {
+        font-size: 0.6rem;
+        padding: 8px;
+        width: max-content;
+    }
+    
+}
+
+/* Ukuran Handphone Kecil */
+@media screen and (min-width: 361px) and (max-width: 480px) {
+
+    .hero-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .tag-list {
+        width: 23rem;
+    }
+
+    .tag {
+        font-size: 1rem;
+    }
+
+    .hero-button a {
+        font-size: 0.9rem;
+    }
+
+    /* Best Seller Section*/
+    .best-seller-items {
+        width: 20%;
+        flex-direction: 1 1 90%;
+        max-width: 90%;
+    }
+
+    .text-card {
+        height: 10%;
+        box-sizing: border-box;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .about-text h3 {
+        font-size: 0.7rem;
+    }
+
+    .about-text h3::before {
+        width: 0.8rem;
+    }
+
+    .about-text h1 {
+        font-size: 1rem;
+    }
+
+    #about-toko-mekkah {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    .about-text a {
+        font-size: 0.7rem;
+        padding: 5px;
+    } 
+
+    .value-items p {
+        font-size: 0.5rem;
+    }
+
+    .about-text .value-items img {
+        height: 20px;
+    }
+
+    /* Product Section Start */
+    .product {
+        height: 100dvh;
+        width: 100vw;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-header {
+        background-color: blue;
+        height: auto;
+        width: 100%;
+    }
+
+
+    .product-menu {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .product-menu a{
+        text-decoration: none;
+        color: white;
+        background-color: var(--textColor);
+        padding: 2px;
+        border-radius: 10px;
+        
+    }
+
+}
+
+
