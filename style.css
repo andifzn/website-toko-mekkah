@@ -81,7 +81,7 @@ nav img {
 }
 
 .dropdown-content {
-    display: none;
+    display: flex;
     flex-direction: column;
 }
 
@@ -90,7 +90,7 @@ nav img {
 }
 
 .dropdown-content.dropdown-hidden {
-    display: flex;
+    display: none;
 }
 
 /* Hero Section */
@@ -402,16 +402,20 @@ nav img {
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 100%;
         padding: 10px;
         gap: 15px 0;
         width: max-content;
-        transform: translateY(-300px);
-        transition: all 0.3s ease-in-out;
-    }
+        top: 100%;
+        transform: translateY(17px);
+        transition: all 0.15s ease-in-out;
+        -webkit-transform: translateY(17px);
+        -moz-transform: translateY(17px);
+        -ms-transform: translateY(17px);
+        -o-transform: translateY(17px);
+}
 
     .dropdown-content.dropdown-hidden {
-        transform: translateY(16px);
+        transform: translateY(-250px);
     }
 
     #contact {
@@ -539,7 +543,7 @@ nav img {
 }
 
 /* Ukuran Desktop Kecil */
-@media (min-width: 1367px)  {
+@media (min-width: 1367px) {
     body {
         position: relative;
     }
@@ -551,6 +555,7 @@ nav img {
     nav {
         flex-wrap: nowrap;
         justify-content: space-between;
+        padding: 15px 25px;
     }
 
     .navbar-menu {
@@ -574,20 +579,18 @@ nav img {
     .dropdown-content {
         background-color: black;
         position: absolute;
-        opacity: 1;
         display: flex;
         flex-direction: column;
         padding: 10px;
         gap: 15px 0;
         width: max-content;
         top: 100%;
-        transform: translateY(-250px);
+        transform: translateY(17px);
         transition: all 0.15s ease-in-out;
     }
 
     .dropdown-content.dropdown-hidden {
-        opacity: 1;
-        transform: translateY(17px);
+        transform: translateY(-250px);
     }
 
     #contact {
