@@ -25,22 +25,21 @@ document.addEventListener("DOMContentLoaded", () => {
             // Togle dropdown yang diklik
             dropdownContent[index].classList.toggle("dropdown-hidden");
         });
-    }); 
+    });
 
     // klik di luar dropdown -> sembunyikan semua dropdown
     document.addEventListener("click", () => {
-        dropdownContent.forEach(content => {
+        dropdownContent.forEach((content) => {
             content.classList.add("dropdown-hidden");
         });
     });
 });
 
-const heroContent = document.querySelector(".hero-content")
+const heroContent = document.querySelector(".hero-content");
 pesanSekarang.addEventListener("click", (e) => {
     e.stopPropagation();
     pemesanan.classList.toggle("pop-up");
     heroContent.style.opacity = 0;
-
 });
 
 document.addEventListener("click", (e) => {
@@ -52,8 +51,5 @@ document.addEventListener("click", (e) => {
         heroContent.style.opacity = 1;
     }
 });
-
-
-
 
 console.log(window.innerWidth + "x" + window.innerHeight);
