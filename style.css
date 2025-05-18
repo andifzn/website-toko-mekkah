@@ -20,6 +20,10 @@ html {
     overflow-x: none;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Header Section */
 header {
     font-family: "Montserrat";
@@ -55,15 +59,19 @@ nav img {
     text-decoration: none;
     color: white;
     padding: 10px 5px;
-    transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
 }
 
 .navbar-menu a:hover {
     color: var(--textColor);
+}
+
+.contact {
+    display: none;
 }
 
 .dropdown {
@@ -170,12 +178,12 @@ nav img {
 
 .pemesanan.pop-up {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -60%) scale(1);
     pointer-events: auto;
-    -webkit-transform: translate(-50%, -50%) scale(1);
-    -moz-transform: translate(-50%, -50%) scale(1);
-    -ms-transform: translate(-50%, -50%) scale(1);
-    -o-transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -60%) scale(1);
+    -moz-transform: translate(-50%, -60%) scale(1);
+    -ms-transform: translate(-50%, -60%) scale(1);
+    -o-transform: translate(-50%, -60%) scale(1);
 }
 
 .pemesanan-header {
@@ -265,4 +273,129 @@ nav img {
 
 /* Ukuran Tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-text h1 {
+        font-size: 1.75rem;
+        width: 75%;
+        margin: auto;
+    }
+
+    .hero-text p {
+        width: 70%;
+        font-size: 1.15rem;
+        margin: 20px auto;
+    }
+
+    .hero-cta a {
+        font-size: 1.15rem;
+    }
+}
+
+/* Ukuran Laptop */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .hamburger-menu {
+        display: none;
+    }    
+
+    nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0 1rem;
+        margin: 0;
+        width: auto;
+    }
+
+    .navbar-menu a {
+        padding: 0;
+    }
+
+    .dropdown {
+        position: relative;
+        width: max-content;
+    }
+
+    .dropdown-content {
+        background-color: black;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        padding: 10px;
+        gap: 15px 0;
+        width: max-content;
+        transform: translateY(-300px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-content.dropdown-hidden {
+        transform: translateY(16px);
+    }
+    
+    #contact {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact a {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        background-color: var(--textColor);
+        padding: 5px 8px;
+        border-radius: 13px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact a:hover {
+        transform: scale(1.1);
+    }
+    
+    .hero {
+        display: flex;
+        align-items: start;
+        padding: 0 30px;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+        width: 65%;
+        line-height: 45px;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+        width: 55%;
+        letter-spacing: 1px;
+    }
+
+    .hero-cta {
+        padding: 0 10px;
+        justify-content: start;
+        gap: 0 15px;
+    }
+
+    .hero-cta a{
+        font-size: 1.2rem;
+        display: block;
+        transition: all 0.3s ease-in;
+    }
+
+    .hero-cta a:hover {
+        transform: scale(1.1);
+    }
+
 }
