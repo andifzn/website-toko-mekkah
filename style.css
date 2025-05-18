@@ -540,6 +540,10 @@ nav img {
 
 /* Ukuran Desktop Kecil */
 @media (min-width: 1367px)  {
+    body {
+        position: relative;
+    }
+
     .hamburger-menu {
         display: none;
     }
@@ -570,18 +574,20 @@ nav img {
     .dropdown-content {
         background-color: black;
         position: absolute;
+        opacity: 1;
         display: flex;
         flex-direction: column;
-        top: 100%;
         padding: 10px;
         gap: 15px 0;
         width: max-content;
-        transform: translateY(-300px);
-        transition: all 0.3s ease-in-out;
+        top: 100%;
+        transform: translateY(-250px);
+        transition: all 0.15s ease-in-out;
     }
 
     .dropdown-content.dropdown-hidden {
-        transform: translateY(16px);
+        opacity: 1;
+        transform: translateY(17px);
     }
 
     #contact {
