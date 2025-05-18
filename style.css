@@ -232,6 +232,49 @@ nav img {
     color: #25d366;
 }
 
+/* Promo Card Section */ 
+.promo-card {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgb(139, 69, 19),rgba(139,69,19,0.8) , transparent),url('assets/img/background-promo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+.promo-content {
+    font-family: 'Cairo', sans-serif;
+    text-shadow: var(--shadow);
+    font-weight: 550;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.promo-content p {
+    font-size: 0.9rem;
+}
+
+.promo-content small {
+    font-size: 0.6rem;
+}
+
+.promo-content a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: max-content;
+    padding: 10px;
+}
+
 /* Ukuran Handphone Umum */
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .hero-text p {
