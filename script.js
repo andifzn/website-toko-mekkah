@@ -34,3 +34,5 @@ document.addEventListener("click", (e) => {
     }
 })
 
+
+console.log(window.innerWidth + "x" + window.innerHeight);
