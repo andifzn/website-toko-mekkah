@@ -3,7 +3,7 @@
     --textColor: #ffa500;
     --mainTextColor: #333333;
     --paragrafColor: #555;
-    --shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    --shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     --boxShadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
@@ -98,7 +98,7 @@ nav img {
     font-family: "Poppins", sans-serif;
     height: 100dvh;
     width: 100%;
-    background-image: url("assets/img/background1.jpg");
+    background-image: url("assets/img/background.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -232,13 +232,19 @@ nav img {
     color: #25d366;
 }
 
-/* Promo Card Section */ 
+/* Promo Card Section */
 .promo-card {
-    width: 90%;
+    width: 95%;
     height: auto;
     overflow: hidden;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom, rgb(139, 69, 19),rgba(139,69,19,0.8) , transparent),url('assets/img/background-promo.jpg');
+    background-image: linear-gradient(
+            to bottom,
+            rgb(139, 69, 19),
+            rgba(139, 69, 19, 0.8),
+            transparent
+        ),
+        url("assets/img/background-promo.webp");
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -248,7 +254,7 @@ nav img {
 }
 
 .promo-content {
-    font-family: 'Cairo', sans-serif;
+    font-family: "Cairo", sans-serif;
     text-shadow: var(--shadow);
     font-weight: 550;
     color: white;
@@ -315,7 +321,6 @@ nav img {
     .pemesanan {
         width: 50%;
     }
-
 }
 
 /* Ukuran Tablet */
@@ -347,12 +352,11 @@ nav img {
     /* Navbar Section on Laptop */
     .hamburger-menu {
         display: none;
-    }    
+    }
 
     nav {
         flex-wrap: nowrap;
         justify-content: space-between;
-
     }
 
     .navbar-menu {
@@ -389,7 +393,7 @@ nav img {
     .dropdown-content.dropdown-hidden {
         transform: translateY(16px);
     }
-    
+
     #contact {
         display: none;
     }
@@ -400,7 +404,7 @@ nav img {
 
     .contact a {
         display: block;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-weight: 600;
         text-decoration: none;
         color: white;
@@ -430,7 +434,7 @@ nav img {
         width: 65%;
         line-height: 45px;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
         width: 55%;
@@ -443,7 +447,7 @@ nav img {
         gap: 0 15px;
     }
 
-    .hero-cta a{
+    .hero-cta a {
         font-size: 1.2rem;
         display: block;
         transition: all 0.3s ease-in;
@@ -480,5 +484,4 @@ nav img {
     .pemesanan-menu a:hover {
         transform: scale(1.1);
     }
-
 }
