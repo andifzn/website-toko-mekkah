@@ -324,7 +324,7 @@ nav img {
 }
 
 /* Ukuran Tablet */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
     /* Hero Section di Tablet */
     .hero-text h1 {
         font-size: 1.75rem;
@@ -348,7 +348,7 @@ nav img {
 }
 
 /* Ukuran Laptop */
-@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     /* Navbar Section on Laptop */
     .hamburger-menu {
         display: none;
