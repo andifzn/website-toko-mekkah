@@ -234,7 +234,7 @@ nav img {
 
 /* Promo Card Section */
 .promo-card {
-    width: 95%;
+    width: 90%;
     height: auto;
     overflow: hidden;
     border-radius: 10px;
@@ -506,6 +506,10 @@ nav img {
     }
 
     /* Promo Section di Laptop */
+    .promo {
+        height: 100%;
+    }
+
     .promo-card {
         justify-content: start;
     }
@@ -529,13 +533,173 @@ nav img {
         transition: all 0.25s ease;
     }
 
-    .promo-content a:hover{
-        background-color: #FFA500;
-
+    .promo-content a:hover {
+        background-color: #ffa500;
     }
 }
 
-/* Ukuran Desktop */
-@media only screen and(min-width: 1367px) {
+/* Ukuran Desktop Kecil */
+@media (min-width: 1367px)  {
+    .hamburger-menu {
+        display: none;
+    }
 
+    nav {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0 1rem;
+        margin: 0;
+        width: auto;
+    }
+
+    .navbar-menu a {
+        padding: 0;
+    }
+
+    .dropdown {
+        position: relative;
+        width: max-content;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        background-color: black;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        padding: 10px;
+        gap: 15px 0;
+        width: max-content;
+        transform: translateY(-300px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .dropdown-content.dropdown-hidden {
+        transform: translateY(16px);
+    }
+
+    #contact {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact a {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        background-color: var(--textColor);
+        padding: 5px 8px;
+        border-radius: 13px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact a:hover {
+        transform: scale(1.1);
+    }
+
+    /* Hero Section on Laptop */
+    .hero {
+        display: flex;
+        align-items: start;
+        padding: 0 30px;
+    }
+
+    .hero-text {
+        text-align: left;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        width: 60%;
+        line-height: 45px;
+    }
+
+    .hero-text p {
+        font-size: 1.253rem;
+        width: 55%;
+        letter-spacing: 1px;
+    }
+
+    .hero-cta {
+        padding: 0 10px;
+        justify-content: start;
+        gap: 0 15px;
+    }
+
+    .hero-cta a {
+        font-size: 1.2rem;
+        display: block;
+        transition: all 0.3s ease-in;
+    }
+
+    .hero-cta a:hover {
+        transform: scale(1.1);
+    }
+
+    .pemesanan {
+        width: 45%;
+        height: 50%;
+    }
+
+    .pemesanan-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .pemesanan-text {
+        font-size: 1.5rem;
+    }
+
+    .pemesanan-menu {
+        padding-bottom: 15px;
+    }
+
+    .pemesanan-menu a {
+        display: block;
+        font-size: 1.5rem;
+        padding: 0 0 10px 0;
+        transition: all 0.2s ease-in;
+    }
+
+    .pemesanan-menu a:hover {
+        transform: scale(1.1);
+    }
+
+    /* Promo Section di Laptop */
+    .promo-card {
+        justify-content: start;
+    }
+
+    .promo-content p {
+        font-size: 1.2rem;
+    }
+
+    .promo-content h1 {
+        font-size: 1.75rem;
+        width: 75%;
+        line-height: 35px;
+    }
+
+    .promo-content small {
+        font-size: 0.9rem;
+    }
+
+    .promo-content a {
+        font-size: 1.1rem;
+        transition: all 0.25s ease;
+    }
+
+    .promo-content a:hover {
+        background-color: #ffa500;
+    }
 }
