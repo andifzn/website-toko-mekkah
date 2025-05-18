@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     gsap.from(".hero-content", {
-        duration: 2,
+        duration: 1.1,
         opacity: 0,
         delay: 2,
         ease: "slow(0.7,0.7,false)",

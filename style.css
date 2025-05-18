@@ -345,6 +345,26 @@ nav img {
     .pemesanan {
         width: 50%;
     }
+
+    /* Promo Section di Ukuran Tablet */
+    .promo-card {
+        justify-content: start;
+    }
+
+    .promo-content p {
+        font-size: 1.05rem;
+    }
+
+    .promo-content h1 {
+        font-size: 1.5rem;
+        width: 70%;
+        line-height: 35px;
+    }
+
+    .promo-content small {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
 }
 
 /* Ukuran Laptop */
@@ -484,4 +504,38 @@ nav img {
     .pemesanan-menu a:hover {
         transform: scale(1.1);
     }
+
+    /* Promo Section di Laptop */
+    .promo-card {
+        justify-content: start;
+    }
+
+    .promo-content p {
+        font-size: 1.2rem;
+    }
+
+    .promo-content h1 {
+        font-size: 1.75rem;
+        width: 75%;
+        line-height: 35px;
+    }
+
+    .promo-content small {
+        font-size: 0.9rem;
+    }
+
+    .promo-content a {
+        font-size: 1.1rem;
+        transition: all 0.25s ease;
+    }
+
+    .promo-content a:hover{
+        background-color: #FFA500;
+
+    }
+}
+
+/* Ukuran Desktop */
+@media only screen and(min-width: 1367px) {
+
 }
