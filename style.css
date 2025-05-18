@@ -256,7 +256,7 @@ nav img {
 
 /* Ukuran Handphone Besar */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-
+    /* Hero Section di Handphone Besar */
     .hero-text h1 {
         font-size: 1.45rem;
         width: 85%;
@@ -269,10 +269,15 @@ nav img {
         margin: 20px auto;
     }
 
+    .pemesanan {
+        width: 50%;
+    }
+
 }
 
 /* Ukuran Tablet */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Hero Section di Tablet */
     .hero-text h1 {
         font-size: 1.75rem;
         width: 75%;
@@ -288,10 +293,15 @@ nav img {
     .hero-cta a {
         font-size: 1.15rem;
     }
+
+    .pemesanan {
+        width: 50%;
+    }
 }
 
 /* Ukuran Laptop */
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    /* Navbar Section on Laptop */
     .hamburger-menu {
         display: none;
     }    
@@ -317,6 +327,7 @@ nav img {
     .dropdown {
         position: relative;
         width: max-content;
+        cursor: pointer;
     }
 
     .dropdown-content {
@@ -359,7 +370,8 @@ nav img {
     .contact a:hover {
         transform: scale(1.1);
     }
-    
+
+    /* Hero Section on Laptop */
     .hero {
         display: flex;
         align-items: start;
@@ -395,6 +407,34 @@ nav img {
     }
 
     .hero-cta a:hover {
+        transform: scale(1.1);
+    }
+
+    .pemesanan {
+        width: 45%;
+        height: 50%;
+    }
+
+    .pemesanan-header h2 {
+        font-size: 1.35rem;
+    }
+
+    .pemesanan-text {
+        font-size: 1rem;
+    }
+
+    .pemesanan-menu {
+        padding-bottom: 15px;
+    }
+
+    .pemesanan-menu a {
+        display: block;
+        font-size: 1.2rem;
+        padding: 0 0 10px 0;
+        transition: all 0.2s ease-in;
+    }
+
+    .pemesanan-menu a:hover {
         transform: scale(1.1);
     }
 
