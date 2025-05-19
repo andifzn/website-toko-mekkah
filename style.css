@@ -285,7 +285,6 @@ nav img {
 .best-seller {
     height: 100dvh;
     background: radial-gradient(circle, #ffffff, #f0f0f0);
-    border: 2px solid red;
     padding: 15px;
 }
 
