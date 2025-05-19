@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         y: -150,
     });
     gsap.to(".navbar", {
+        delay:1,
         duration: 2,
         ease: "elastic.out(1,0.3)",
         y: 0,
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     gsap.from(".hero-content", {
         duration: 1,
         opacity: 0,
-        delay: 1,
+        delay: 1.5,
         ease: "slow(0.7,0.7,false)",
     });
 });
