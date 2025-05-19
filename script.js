@@ -2,6 +2,7 @@ const hamburgerMenu = document.getElementById("hamburger-menu");
 const navbarMenu = document.querySelector(".navbar-menu");
 const pesanSekarang = document.getElementById("pesan-sekarang");
 const pemesanan = document.querySelector(".pemesanan");
+const lihatSelengkapnya = document.getElementById("lihat-selengkapnya")
 
 hamburgerMenu.addEventListener("click", () => {
     navbarMenu.classList.toggle("hidden");
@@ -50,6 +51,12 @@ document.addEventListener("click", (e) => {
         pemesanan.classList.remove("pop-up");
         heroContent.style.opacity = 1;
     }
+});
+
+// Promo Section 
+lihatSelengkapnya.addEventListener("click", () => {
+    const promoItems = document.querySelector(".promo-items");
+    promoItems.classList.toggle("promo-pop-up");
 });
 
 console.log(window.innerWidth + "x" + window.innerHeight);

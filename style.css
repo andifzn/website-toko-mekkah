@@ -234,9 +234,14 @@ nav img {
 }
 
 /* Promo Card Section */
+.promo {
+    position: relative;
+    height: auto;
+    display: block;
+}
+
 .promo-card {
     width: 90%;
-    height: auto;
     overflow: hidden;
     border-radius: 10px;
     background-image: linear-gradient(
@@ -262,6 +267,7 @@ nav img {
     display: flex;
     flex-direction: column;
     gap: 10px 0;
+    z-index: 1;
 }
 
 .promo-content p {
@@ -280,6 +286,76 @@ nav img {
     border: 1px solid white;
     width: max-content;
     padding: 10px;
+}
+
+.promo-items {
+    opacity: 0;
+    position: relative;
+    margin: auto;
+    background-image: linear-gradient(            to right,            rgba(92, 44, 6, 0.9),            rgba(92, 44, 6, 0)        ),        url("assets/img/promo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90%;
+    max-height: 0;
+    padding: 10px;
+    border-radius: 10px;
+    transform: translateY(-290px);
+    z-index: -1;
+    transition: all 0.3s ease-in;
+}
+
+.promo-items-text {
+    font-family: "Manrope";
+    color: white;
+    text-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.promo-items-text h1 {
+    font-size: 1rem;
+    font-style: oblique;
+}
+
+.promo-items-text strong {
+    color: var(--textColor);
+}
+
+.promo-items-text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+.promo-items-text p {
+    position: relative;
+    font-size: 0.8rem;
+    display: block;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.promo-items-text p::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: var(--textColor);
+    top: 25%;
+    left: 0;
+}
+
+.promo-items.promo-pop-up {
+    position: relative;
+    opacity: 1;
+    z-index: 99;
+    min-height: max-content;
+    transform: translateY(-0px);
+    -webkit-transform: translateY(-0px);
+    -moz-transform: translateY(-0px);
+    -ms-transform: translateY(-0px);
+    -o-transform: translateY(-0px);
 }
 
 /* Best Seller Section */
@@ -364,7 +440,7 @@ nav img {
 }
 
 .best-seller-cards {
-    font-family: 'Be Vietnam Pro';
+    font-family: "Be Vietnam Pro";
     position: relative;
     width: 45%;
     margin: 1rem 0 0 0;
@@ -412,8 +488,6 @@ nav img {
     padding: 5px;
     border-radius: 5px;
 }
-
-
 
 /* Ukuran Handphone Umum */
 @media only screen and (min-width: 361px) and (max-width: 480px) {
