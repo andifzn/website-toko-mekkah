@@ -291,7 +291,7 @@ nav img {
 .promo-items {
     opacity: 0;
     position: relative;
-    margin: auto;
+    margin: 0 auto 30px auto;
     background-image: linear-gradient(            to right,            rgba(92, 44, 6, 0.9),            rgba(92, 44, 6, 0)        ),        url("assets/img/promo.jpg");
     background-size: cover;
     background-position: center;
@@ -376,6 +376,7 @@ nav img {
     display: flex;
     flex-direction: column;
     gap: 20px 0;
+    padding: 0 15px;
 }
 
 .best-seller-title {
@@ -509,6 +510,38 @@ nav img {
         width: 90%;
         margin: 20px auto;
     }
+
+    /* Promo Section Di Handphone Sedang */
+    .promo-items-text h1 {
+        font-size: 1.1rem;
+    }
+
+    .promo-items-text h2 {
+        font-size: 1.20rem
+    }
+
+    .promo-items-text p {
+        font-size: 1.1rem;
+    }
+
+    /* Best Seller Section di Handphone Sedang */
+    .best-seller-title p {
+        font-size: 1rem;
+    }
+
+    .best-seller-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .best-seller-title a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards-text a {
+        font-size: 1rem;
+    }
+
+
 }
 
 /* Ukuran Handphone Besar */
@@ -529,6 +562,61 @@ nav img {
     .pemesanan {
         width: 50%;
     }
+
+    /* Promo Section */
+    .promo-items-text h1 {
+        font-size: 1.15rem;
+    }
+
+    .promo-items-text h2 {
+        font-size: 1.35rem
+    }
+
+    .promo-items-text p {
+        font-size: 1.20rem;
+        display: block;
+        width: 90%;
+    }
+
+    /* Best Seller Section di Handphone Sedang */
+    .best-seller-header {
+        padding: 0 25px;
+    }
+
+    .best-seller-title p {
+        font-size: 1rem;
+    }
+
+    .best-seller-title h1 {
+        font-size: 1.3rem;
+    }
+
+    .best-seller-title a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards-text a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards-text p {
+        font-size: 1rem;
+    }
+    
+    .best-seller-cards-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .best-seller-cards-text img {
+        width: 23px;
+        height: auto;
+    }
+
+    .best-seller-cards-text a {
+        font-size: 1.15rem;
+    }
+    
+
 }
 
 /* Ukuran Tablet */
@@ -572,6 +660,63 @@ nav img {
     .promo-content small {
         font-size: 0.8rem;
         font-weight: 600;
+    }
+
+    /* Promo Section */
+    .promo-items-text h1 {
+        font-size: 1.30rem;
+    }
+
+    .promo-items-text h2 {
+        font-size: 1.5rem;
+        display: block;
+        width: 85%;
+    }
+
+    .promo-items-text p {
+        font-size: 1.30rem;
+        display: block;
+        max-width: 70%;
+    }
+
+    /* Best Seller Di Tablet */
+    .best-seller {
+        padding: 35px 15px;
+    }
+    
+    .best-seller-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lihat-selengkapnya {
+        display: flex;
+        align-items: center;
+    }
+
+    .best-seller-title p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .best-seller-title h1 {
+        font-size: 1.35rem;
+    }
+
+    .lihat-selengkapnya a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards {
+        width: 23%;
+    }
+
+    .best-seller-cards-text img {
+        width: 20px;
+    }
+
+    .best-seller-cards-text a {
+        width: max-content;
     }
 }
 
@@ -724,8 +869,10 @@ nav img {
 
     .promo-card {
         justify-content: start;
+        padding: 30px;
     }
 
+    
     .promo-content p {
         font-size: 1.2rem;
     }
@@ -747,6 +894,89 @@ nav img {
 
     .promo-content a:hover {
         background-color: #ffa500;
+    }
+
+    .promo-items {
+        padding:30px;
+    }
+    .promo-items-text h1 {
+        font-size: 1.30rem;
+    }
+
+    .promo-items-text h2 {
+        font-size: 1.5rem;
+        display: block;
+        max-width: 80%;
+    }
+
+    .promo-items-text p {
+        font-size: 1.30rem;
+        display: block;
+    }
+
+    .promo-items-text p::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: var(--textColor);
+        top: 50%;
+        left: 0;
+    }
+
+    /* Best Seller Di Tablet */
+    .best-seller {
+        padding: 35px 15px;
+    }
+    
+    .best-seller-header {
+        padding: 0 35px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lihat-selengkapnya {
+        display: flex;
+        align-items: center;
+    }
+
+    .best-seller-title p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .best-seller-title h1 {
+        font-size: 1.35rem;
+    }
+
+    .lihat-selengkapnya a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards {
+        width: 23%;
+    }
+
+    .best-seller-cards-text p {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .best-seller-cards-text img {
+        width: 20px;
+    }
+
+    .best-seller-cards-text a {
+        width: max-content;
+        font-size: 1rem;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .best-seller-cards-text a:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -893,8 +1123,17 @@ nav img {
     }
 
     /* Promo Section di Laptop */
+    .promo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .promo-card {
         justify-content: start;
+        padding: 30px;
+        margin: 3rem 0 0 0;
     }
 
     .promo-content p {
@@ -918,5 +1157,95 @@ nav img {
 
     .promo-content a:hover {
         background-color: #ffa500;
+    }
+
+    /* Promo Section  */
+    .promo-items {
+        padding: 30px;
+    }
+    
+
+    .promo-items-text h1 {
+        font-size: 1.30rem;
+    }
+
+    .promo-items-text h2 {
+        font-size: 1.6rem;
+        display: block;
+        max-width: 75%;
+    }
+
+    .promo-items-text p {
+        font-size: 1.30rem;
+        display: block;
+    }
+
+    .promo-items-text p::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: var(--textColor);
+        top: 50%;
+        left: 0;
+    }
+
+    .promo-items.promo-pop-up {
+        margin: 2rem 0;
+    }
+
+    /* Best Seller Di Desktop */
+    .best-seller {
+        padding: 60px 15px;
+    }
+    
+    .best-seller-header {
+        padding: 0 65px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lihat-selengkapnya {
+        display: flex;
+        align-items: center;
+    }
+
+    .best-seller-title p {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .best-seller-title h1 {
+        font-size: 1.55rem;
+    }
+
+    .lihat-selengkapnya a {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards {
+        width: 23%;
+    }
+
+    .best-seller-cards-text p {
+        font-size: 1rem;
+    }
+
+    .best-seller-cards-text h1 {
+        font-size: 1.3rem;
+    }
+
+    .best-seller-cards-text img {
+        width: 20px;
+    }
+
+    .best-seller-cards-text a {
+        width: max-content;
+        font-size: 1rem;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .best-seller-cards-text a:hover {
+        transform: scale(1.1);
     }
 }
