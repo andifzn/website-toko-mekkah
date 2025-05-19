@@ -282,14 +282,20 @@ nav img {
 }
 
 /* Best Seller Section */
+.glass-background {
+    background: rgba(255, 255, 255, 0.4); /* Putih transparan */
+    backdrop-filter: blur(10px); /* Efek blur */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 .best-seller {
-    height: 100dvh;
-    background: radial-gradient(circle, #ffffff, #f0f0f0);
+    height: auto;
     padding: 15px;
 }
 
 .best-seller-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px 0;
@@ -309,7 +315,7 @@ nav img {
 }
 
 .best-seller-title p::before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: var(--textColor);
     height: 2px;
@@ -319,7 +325,7 @@ nav img {
 }
 
 .best-seller-title h1 {
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: 550;
     font-style: oblique;
 }
@@ -348,6 +354,64 @@ nav img {
     color: white;
     transform: scale(1.1);
 }
+
+.best-seller-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.best-seller-cards {
+    font-family: 'Be Vietnam Pro';
+    position: relative;
+    width: 45%;
+    margin: 1rem 0 0 0;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.best-seller-cards img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.best-seller-cards-text {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.best-seller-cards-text p {
+    font-size: 0.8rem;
+}
+
+.best-seller-cards-text h1 {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.best-seller-cards-text img {
+    width: 20px;
+    height: auto;
+}
+
+.best-seller-cards-text a {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    color: white;
+    font-weight: 550;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: var(--textColor);
+    padding: 5px;
+    border-radius: 5px;
+}
+
 
 
 /* Ukuran Handphone Umum */
@@ -481,7 +545,7 @@ nav img {
         -moz-transform: translateY(17px);
         -ms-transform: translateY(17px);
         -o-transform: translateY(17px);
-}
+    }
 
     .dropdown-content.dropdown-hidden {
         transform: translateY(-250px);
