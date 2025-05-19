@@ -96,7 +96,7 @@ nav img {
 /* Hero Section */
 .hero {
     font-family: "Poppins", sans-serif;
-    height: 100dvh;
+    min-height: 100svh;
     width: 100%;
     background-image: url("assets/img/background.webp");
     background-position: center;
