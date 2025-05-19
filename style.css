@@ -109,6 +109,7 @@ nav img {
 }
 
 .hero-text {
+    will-change: transform, opacity;
     text-align: center;
     padding: 0 10px;
     text-shadow: var(--shadow);
