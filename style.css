@@ -490,6 +490,124 @@ nav img {
     border-radius: 5px;
 }
 
+/* Toko Section */
+.toko {
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.toko-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+.toko-header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toko-header h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 15px;
+}
+
+.toko-header h1::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 2px;
+    background-color: var(--textColor);
+    left: 0;
+    top: 50%;
+}
+
+.toko-header h2 {
+    font-style: oblique;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.toko-header strong {
+    font-weight: 650;
+    color: var(--textColor);
+}
+
+.toko-header p {
+    font-family: 'Raleway', sans-serief;
+    font-size: 0.85rem;
+    text-align: center;
+    display: block;
+    width: 90%
+}
+
+.toko-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    margin: 20px 0 0 0;
+}
+
+.toko-cards {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    border: 1px solid white;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+}
+
+.toko-cards:hover {
+    transform: scale(1.05);
+    margin: 20px;
+}
+
+.toko-cards-header {
+    background-image: url('assets/img/toko-mekkah-bb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80px;
+    border-radius: 5px 5px 0 0;
+}
+
+.toko-cards-text {
+    color: var(--mainTextColor);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.toko-cards-text h1 {
+    font-size: 1.2rem;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.toko-cards-text a {
+    display: block;
+    text-decoration: none;
+    color: var(--mainTextColor);
+    border: 2px solid var(--paragrafColor);
+    width: max-content;
+    padding:  10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
 /* Ukuran Handphone Umum */
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     .hero-text p {
@@ -926,11 +1044,17 @@ nav img {
 
     /* Best Seller Di Tablet */
     .best-seller {
-        padding: 35px 15px;
+        padding: 35px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .best-seller-items {
+        width: 90%;
     }
     
     .best-seller-header {
-        padding: 0 35px;
+        padding: 0;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -951,6 +1075,10 @@ nav img {
 
     .lihat-selengkapnya a {
         font-size: 1rem;
+    }
+
+    .best-seller-content {
+        justify-content: space-between;
     }
 
     .best-seller-cards {
@@ -1134,6 +1262,7 @@ nav img {
         justify-content: start;
         padding: 30px;
         margin: 3rem 0 0 0;
+        width: 80%;
     }
 
     .promo-content p {
@@ -1162,6 +1291,7 @@ nav img {
     /* Promo Section  */
     .promo-items {
         padding: 30px;
+        width: 80%;
     }
     
 
@@ -1196,13 +1326,23 @@ nav img {
 
     /* Best Seller Di Desktop */
     .best-seller {
-        padding: 60px 15px;
+        padding: 60px 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .best-seller-items {
+        width: 80%;
     }
     
     .best-seller-header {
-        padding: 0 65px;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .best-seller-content {
+        justify-content: space-between;
+
     }
 
     .lihat-selengkapnya {
