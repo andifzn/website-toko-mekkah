@@ -866,8 +866,6 @@ nav img {
     .best-seller-cards-text a {
         width: max-content;
     }
-
-   c
 }
 
 /* Ukuran Laptop */
@@ -1138,7 +1136,7 @@ nav img {
         transform: scale(1.1);
     }
 
-     /* Toko Section di Tablet */
+    /* Toko Section di Tablet */
     .toko {
         padding: 45px 0;
     }
