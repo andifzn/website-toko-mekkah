@@ -743,7 +743,7 @@ footer {
     height: auto;
     background-color: #151922;
     color: white;
-    padding: 40px 15px;
+    padding: 50px 15px;
     text-shadow: var(--shadow);
 }
 
@@ -812,11 +812,17 @@ footer {
 
 .about-text {
     font-family: "Poppins";
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .about-text p {
     font-size: 0.85rem;
+}
+
+.footer-second-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
 }
 
 .social-media {
@@ -913,6 +919,12 @@ footer {
     .testimoni-header h1 {
         font-size: 1.25rem;
     }
+
+    /* Footer Section Di Handphone Umum */
+    .about-text p {
+        display: block;
+        width: 85%;
+    }
 }
 
 /* Ukuran Handphone Sedang */
@@ -975,6 +987,56 @@ footer {
 
     .testimoni-cards {
         width: 80%;
+    }
+
+    /* Footer Section Di Handphone Sedang */
+    .footer-header p {
+        display: block;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .about img {
+        height: 40px;
+    }
+
+    .social-media img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 85%;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .contact h1 {
+        font-size: 1.45rem;
+    }
+
+    .nomor-kontak p {
+        font-size: 1.15rem;
+    }
+
+    .email p {
+        font-size: 1.15rem;
+    }
+
+    .halaman h1 {
+        font-size: 1.45rem;
+    }
+
+    .halaman-items a {
+        font-size: 1.15rem;
+    }
+
+    .layanan-online h1 {
+        font-size: 1.45rem;
+    }
+
+    .layanan-online-items a {
+        font-size: 1.15rem;
     }
 }
 
@@ -1081,6 +1143,56 @@ footer {
 
     .testimoni-cards {
         width: 60%;
+    }
+
+    /* Footer Secition Di Handphone Besar */
+    .footer-header p {
+        display: block;
+        width: 85%;
+        font-size: 1.35rem;
+    }
+
+    .about img {
+        height: 40px;
+    }
+
+    .social-media img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 85%;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .contact h1 {
+        font-size: 1.45rem;
+    }
+
+    .nomor-kontak p {
+        font-size: 1.15rem;
+    }
+
+    .email p {
+        font-size: 1.15rem;
+    }
+
+    .halaman h1 {
+        font-size: 1.45rem;
+    }
+
+    .halaman-items a {
+        font-size: 1.15rem;
+    }
+
+    .layanan-online h1 {
+        font-size: 1.45rem;
+    }
+
+    .layanan-online-items a {
+        font-size: 1.15rem;
     }
 }
 
@@ -1223,6 +1335,100 @@ footer {
 
     .testimoni-content .testimoni-cards:nth-child(3) {
         order: 3;
+    }
+
+    /* Testimoni Section Di Handphone Besar */
+    .testimoni-header h1 {
+        font-size: 1.4rem;
+    }
+
+    .testimoni-header p {
+        font-size: 1rem;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .testimoni-cards {
+        width: 60%;
+    }
+
+    /* Footer Section Di Tablet */
+
+    .footer-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 40px;
+    }
+
+    .footer-header::after {
+        width: 90%;
+    }
+
+    .footer-header p {
+        display: block;
+        width: 30%;
+        text-align: left;
+        font-size: 1.35rem;
+        letter-spacing: 0.8px;
+    }
+
+    .footer-header-cta a {
+        font-size: 1rem;
+        border-radius: 17px;
+    }
+
+    .about {
+        padding-left: 40px;
+    }
+
+    .about img {
+        height: 40px;
+    }
+
+    .social-media img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 85%;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .footer-second-items {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact h1 {
+        font-size: 1.45rem;
+    }
+
+    .nomor-kontak p {
+        font-size: 1.15rem;
+    }
+
+    .email p {
+        font-size: 1.15rem;
+    }
+
+    .halaman h1 {
+        font-size: 1.45rem;
+    }
+
+    .halaman-items a {
+        font-size: 1.15rem;
+    }
+
+    .layanan-online h1 {
+        font-size: 1.45rem;
+    }
+
+    .layanan-online-items a {
+        font-size: 1.15rem;
     }
 }
 
@@ -1494,7 +1700,7 @@ footer {
         transform: scale(1.1);
     }
 
-    /* Toko Section di Tablet */
+    /* Toko Section di Laptop */
     .toko {
         padding: 45px 0;
     }
@@ -1549,7 +1755,7 @@ footer {
         font-size: 0.85rem;
     }
 
-    /* Testimoni Section Di Tablet*/
+    /* Testimoni Section Di Laptop*/
     .testimoni {
         align-items: center;
     }
@@ -1594,6 +1800,104 @@ footer {
 
     .testimoni-content .testimoni-cards:nth-child(3) {
         order: 3;
+    }
+
+    /* Footer Section Di Laptop*/
+    .footer-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 90px;
+    }
+
+    .footer-header::after {
+        width: 87%;
+    }
+
+    .footer-header p {
+        display: block;
+        width: 30%;
+        text-align: left;
+        font-size: 1.65rem;
+        letter-spacing: 0.8px;
+    }
+
+    .footer-header-cta {
+        gap: 0 17px;
+    }
+
+    .footer-header-cta a {
+        font-size: 1.15rem;
+        border-radius: 17px;
+        padding: 8px 10px;
+    }
+
+    .about {
+        padding-left: 90px;
+        width: 60%;
+    }
+
+    .about img {
+        height: 40px;
+    }
+
+    .social-media img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .footer-second-items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 90px;
+    }
+
+    .contact h1 {
+        font-size: 1.75rem;
+    }
+
+    .nomor-kontak p {
+        font-size: 1.25rem;
+    }
+
+    .email p {
+        font-size: 1.25rem;
+    }
+
+    .halaman h1 {
+        font-size: 1.85rem;
+    }
+
+    .halaman-items {
+        gap: 15px 0;
+    }
+
+    .halaman-items a {
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .layanan-online h1 {
+        font-size: 1.85rem;
+    }
+
+    .layanan-online-items {
+        gap: 15px 0;
+    }
+
+    .layanan-online-items a {
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .halaman-items a:hover,
+    .layanan-online-items a:hover {
+        color: var(--textColor);
     }
 }
 
@@ -1874,5 +2178,205 @@ footer {
 
     .best-seller-cards-text a:hover {
         transform: scale(1.1);
+    }
+
+    /* Toko Section Di Desktop */
+    .toko {
+        padding: 45px 0;
+    }
+
+    .toko-items {
+        width: 95%;
+    }
+
+    .toko-header h1 {
+        font-size: 1.35rem;
+    }
+
+    .toko-header h2 {
+        font-size: 1.55rem;
+    }
+
+    .toko-header p {
+        display: block;
+        width: 80%;
+        font-size: 1.15rem;
+    }
+
+    .toko-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: space-evenly;
+        max-width: 100%;
+        height: auto;
+        gap: 45px 0;
+        margin: 60px 0 0 0;
+    }
+
+    .toko-cards {
+        width: 45%;
+        margin: 0;
+    }
+
+    .toko-cards-text {
+        padding: 15px 30px;
+    }
+
+    .toko-cards-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .toko-cards-text p {
+        font-size: 1.2rem;
+    }
+
+    .toko-cards-text small {
+        font-size: 0.85rem;
+    }
+
+    /* Testimoni Section Di Desktop*/
+    .testimoni {
+        align-items: center;
+    }
+
+    .testimoni-items {
+        width: 100%;
+    }
+
+    .testimoni-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .testimoni-header p {
+        font-size: 1.15rem;
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    .testimoni-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .testimoni-cards {
+        width: 28%;
+    }
+
+    .testimoni-cards h1 {
+        text-align: center;
+    }
+
+    .testimoni-content .testimoni-cards:first-child {
+        order: 1;
+    }
+
+    .testimoni-content .testimoni-cards:nth-child(2) {
+        order: 2;
+    }
+
+    .testimoni-content .testimoni-cards:nth-child(3) {
+        order: 3;
+    }
+
+    /* Footer Section Di Desktop*/
+    .footer-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 90px;
+    }
+
+    .footer-header::after {
+        width: 87%;
+    }
+
+    .footer-header p {
+        display: block;
+        width: 30%;
+        text-align: left;
+        font-size: 1.65rem;
+        letter-spacing: 0.8px;
+    }
+
+    .footer-header-cta {
+        gap: 0 17px;
+    }
+
+    .footer-header-cta a {
+        font-size: 1.15rem;
+        border-radius: 17px;
+        padding: 8px 10px;
+    }
+
+    .about {
+        padding-left: 90px;
+        width: 60%;
+    }
+
+    .about img {
+        height: 40px;
+    }
+
+    .social-media img {
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text p {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .footer-second-items {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 90px;
+    }
+
+    .contact h1 {
+        font-size: 1.75rem;
+    }
+
+    .nomor-kontak p {
+        font-size: 1.25rem;
+    }
+
+    .email p {
+        font-size: 1.25rem;
+    }
+
+    .halaman h1 {
+        font-size: 1.85rem;
+    }
+
+    .halaman-items {
+        gap: 15px 0;
+    }
+
+    .halaman-items a {
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .layanan-online h1 {
+        font-size: 1.85rem;
+    }
+
+    .layanan-online-items {
+        gap: 15px 0;
+    }
+
+    .layanan-online-items a {
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .halaman-items a:hover,
+    .layanan-online-items a:hover {
+        color: var(--textColor);
     }
 }
