@@ -825,7 +825,8 @@ footer {
     gap: 40px 0;
 }
 
-.social-media {
+.social-media,
+.contact-items {
     display: flex;
     gap: 0 10px;
 }
@@ -838,11 +839,13 @@ footer {
     border-radius: 100%;
 }
 
-.contact h1 {
-    font-family: "Montserrat";
+.contact h1,
+.halaman h1,
+.layanan-online h1,
+.kategori h1 {
+    font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: white;
+    margin-bottom: 25px;
 }
 
 .contact-items {
@@ -874,36 +877,17 @@ footer {
     gap: 0 10px;
 }
 
-.halaman-items {
+.halaman-items,
+.layanan-online-items,
+.kategori-items {
     display: flex;
     flex-direction: column;
-    gap: 8px 0;
+    gap: 15px 0;
 }
 
-.halaman h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.halaman-items a {
-    text-decoration: none;
-    color: rgb(233, 233, 233);
-    font-weight: 500;
-}
-
-.layanan-online h1 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.layanan-online-items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px 0;
-}
-
-.layanan-online-items a {
+.halaman-items a,
+.layanan-online-items a,
+.kategori-items a {
     text-decoration: none;
     color: rgb(233, 233, 233);
     font-weight: 500;
@@ -1011,31 +995,26 @@ footer {
         margin-bottom: 20px;
     }
 
-    .contact h1 {
+    .contact h1,
+    .halaman h1,
+    .layanan-online h1,
+    .kategori h1 {
+        font-family: "Montserrat", sans-serif;
         font-size: 1.45rem;
+        margin-bottom: 25px;
     }
 
-    .nomor-kontak p {
-        font-size: 1.15rem;
-    }
-
+    .nomor-kontak p,
     .email p {
         font-size: 1.15rem;
     }
 
-    .halaman h1 {
-        font-size: 1.45rem;
-    }
-
-    .halaman-items a {
-        font-size: 1.15rem;
-    }
-
-    .layanan-online h1 {
-        font-size: 1.45rem;
-    }
-
-    .layanan-online-items a {
+    .halaman-items a,
+    .layanan-online-items a,
+    .kategori-items a {
+        text-decoration: none;
+        color: rgb(233, 233, 233);
+        font-weight: 500;
         font-size: 1.15rem;
     }
 }
@@ -1167,32 +1146,23 @@ footer {
         margin-bottom: 20px;
     }
 
-    .contact h1 {
-        font-size: 1.45rem;
+    .contact h1,
+    .halaman h1,
+    .layanan-online h1,
+    .kategori h1 {
+        font-size: 1.55rem;
+        margin-bottom: 25px;
     }
 
-    .nomor-kontak p {
-        font-size: 1.15rem;
-    }
-
+    .nomor-kontak p,
     .email p {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 
-    .halaman h1 {
-        font-size: 1.45rem;
-    }
-
-    .halaman-items a {
-        font-size: 1.15rem;
-    }
-
-    .layanan-online h1 {
-        font-size: 1.45rem;
-    }
-
-    .layanan-online-items a {
-        font-size: 1.15rem;
+    .halaman-items a,
+    .layanan-online-items a,
+    .kategori-items a {
+        font-size: 1.25rem;
     }
 }
 
@@ -1368,7 +1338,7 @@ footer {
 
     .footer-header p {
         display: block;
-        width: 30%;
+        width: 40%;
         text-align: left;
         font-size: 1.35rem;
         letter-spacing: 0.8px;
@@ -1377,6 +1347,11 @@ footer {
     .footer-header-cta a {
         font-size: 1rem;
         border-radius: 17px;
+    }
+
+    .footer-items {
+        margin: auto;
+        width: 90%;
     }
 
     .about {
@@ -1399,35 +1374,39 @@ footer {
     }
 
     .footer-second-items {
+        padding-left: 40px;
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        gap: 40px 40px;
     }
 
-    .contact h1 {
-        font-size: 1.45rem;
+    .contact,
+    .halaman,
+    .layanan-online,
+    .kategori {
+        width: 40%;
     }
 
-    .nomor-kontak p {
-        font-size: 1.15rem;
+    .contact h1,
+    .halaman h1,
+    .layanan-online h1,
+    .kategori h1 {
+        font-size: 1.55rem;
+        margin-bottom: 25px;
     }
 
+    .nomor-kontak p,
     .email p {
         font-size: 1.15rem;
     }
 
-    .halaman h1 {
-        font-size: 1.45rem;
-    }
-
-    .halaman-items a {
-        font-size: 1.15rem;
-    }
-
-    .layanan-online h1 {
-        font-size: 1.45rem;
-    }
-
-    .layanan-online-items a {
+    .halaman-items a,
+    .layanan-online-items a,
+    .kategori-items a {
+        text-decoration: none;
+        color: rgb(233, 233, 233);
+        font-weight: 500;
         font-size: 1.15rem;
     }
 }
@@ -1807,7 +1786,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 90px;
+        padding: 30px 80px;
     }
 
     .footer-header::after {
@@ -1833,7 +1812,7 @@ footer {
     }
 
     .about {
-        padding-left: 90px;
+        padding-left: 80px;
         width: 60%;
     }
 
@@ -1852,13 +1831,24 @@ footer {
     }
 
     .footer-second-items {
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        padding: 40px 90px;
+        padding-left: 80px;
     }
 
-    .contact h1 {
-        font-size: 1.75rem;
+    .contact,
+    .halaman,
+    .layanan-online,
+    .kategori {
+        width: 40%;
+    }
+
+    .contact h1,
+    .halaman h1,
+    .layanan-online h1,
+    .kategori h1 {
+        font-size: 1.85rem;
     }
 
     .nomor-kontak p {
@@ -1869,34 +1859,16 @@ footer {
         font-size: 1.25rem;
     }
 
-    .halaman h1 {
-        font-size: 1.85rem;
-    }
-
-    .halaman-items {
-        gap: 15px 0;
-    }
-
-    .halaman-items a {
-        font-size: 1.25rem;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .layanan-online h1 {
-        font-size: 1.85rem;
-    }
-
-    .layanan-online-items {
-        gap: 15px 0;
-    }
-
-    .layanan-online-items a {
+    .halaman-items a,
+    .layanan-online-items a,
+    .kategori-items a {
         font-size: 1.25rem;
         transition: all 0.3s ease-in-out;
     }
 
     .halaman-items a:hover,
-    .layanan-online-items a:hover {
+    .layanan-online-items a:hover,
+    .kategori-items a:hover {
         color: var(--textColor);
     }
 }
@@ -2194,7 +2166,7 @@ footer {
     }
 
     .toko-header h2 {
-        font-size: 1.55rem;
+        font-size: 1.75rem;
     }
 
     .toko-header p {
@@ -2245,11 +2217,11 @@ footer {
     }
 
     .testimoni-header h1 {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
     }
 
     .testimoni-header p {
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         display: block;
         width: 70%;
         margin: auto;
@@ -2268,6 +2240,19 @@ footer {
 
     .testimoni-cards h1 {
         text-align: center;
+        font-size: 1.75rem;
+    }
+
+    .testimoni-cards strong {
+        font-size: 1rem;
+    }
+
+    .testimoni-cards-text p {
+        font-size: 1.25rem;
+    }
+
+    .testimoni-cta a {
+        font-size: 1.25rem;
     }
 
     .testimoni-content .testimoni-cards:first-child {
@@ -2291,7 +2276,7 @@ footer {
     }
 
     .footer-header::after {
-        width: 87%;
+        width: 90%;
     }
 
     .footer-header p {
@@ -2337,46 +2322,39 @@ footer {
         padding: 40px 90px;
     }
 
-    .contact h1 {
-        font-size: 1.75rem;
+    .contact h1,
+    .halaman h1,
+    .layanan-online h1,
+    .kategori h1 {
+        font-size: 1.85rem;
     }
 
     .nomor-kontak p {
-        font-size: 1.25rem;
+        font-size: 1.35rem;
     }
 
     .email p {
-        font-size: 1.25rem;
-    }
-
-    .halaman h1 {
-        font-size: 1.85rem;
+        font-size: 1.35rem;
     }
 
     .halaman-items {
         gap: 15px 0;
     }
 
-    .halaman-items a {
-        font-size: 1.25rem;
+    .halaman-items a,
+    .layanan-online-items a,
+    .kategori-items a {
+        font-size: 1.35rem;
         transition: all 0.3s ease-in-out;
-    }
-
-    .layanan-online h1 {
-        font-size: 1.85rem;
     }
 
     .layanan-online-items {
         gap: 15px 0;
     }
 
-    .layanan-online-items a {
-        font-size: 1.25rem;
-        transition: all 0.3s ease-in-out;
-    }
-
     .halaman-items a:hover,
-    .layanan-online-items a:hover {
+    .layanan-online-items a:hover,
+    .kategori-items a:hover {
         color: var(--textColor);
     }
 }
