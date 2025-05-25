@@ -743,8 +743,11 @@ footer {
     height: auto;
     background-color: #151922;
     color: white;
-    padding: 50px 15px;
     text-shadow: var(--shadow);
+}
+
+.first-footer {
+    padding: 50px 25px;
 }
 
 .footer-header {
@@ -891,6 +894,19 @@ footer {
     text-decoration: none;
     color: rgb(233, 233, 233);
     font-weight: 500;
+}
+
+.footer-end {
+    height: auto;
+    width: 100%;
+    background-color: #0d0907;
+    color: white;
+    padding: 15px 0;
+}
+
+.footer-end-text p {
+    font-size: 0.95rem;
+    text-align: center;
 }
 
 /* Ukuran Handphone Umum */
@@ -1748,7 +1764,7 @@ footer {
     }
 
     .testimoni-header p {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         display: block;
         width: 70%;
         margin: auto;
@@ -1779,6 +1795,10 @@ footer {
 
     .testimoni-content .testimoni-cards:nth-child(3) {
         order: 3;
+    }
+
+    .testimoni-cards-text p {
+        font-size: 1.1rem;
     }
 
     /* Footer Section Di Laptop*/
