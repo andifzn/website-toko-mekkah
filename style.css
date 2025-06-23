@@ -563,12 +563,16 @@ nav img {
 }
 
 .toko-cards-header {
-    background-image: url("assets/img/toko-mekkah-bb.jpg");
+    background-image: url("assets/img/manggar.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 80px;
+    min-height: 250px;
     border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
 }
 
 .toko-cards-text {
