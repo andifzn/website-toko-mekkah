@@ -563,7 +563,7 @@ nav img {
 }
 
 .toko-cards-header {
-    background-image: url("assets/img/manggar.JPG");
+    /* background-image: url("assets/img/manggar.JPG"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -612,134 +612,72 @@ nav img {
     -o-transform: scale(1.1);
 }
 
-/* Testimoni Section */
-.testimoni {
-    position: relative;
+/* Mengapa Toko Mekkah Section */
+.mengapa-toko-mekkah {
     height: auto;
+    padding: 30px 15px;
+}
+
+.mengapa-toko-mekkah-header {
     display: flex;
     justify-content: center;
-    padding: 60px 0;
-    background: radial-gradient(
-        circle at center,
-        rgba(255, 255, 255, 0.1),
-        #151922
-    );
-    background-color: #151922;
-    box-shadow: inset 0 8px 8px -8px rgba (0, 0, 0, 0.4);
-}
-
-.testimoni-items {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.testimoni-header {
-    color: white;
-    text-shadow: var(--shadow);
-    margin-bottom: 100px;
-}
-
-.testimoni-header h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins',sans-serif;
     text-align: center;
-    font-size: 1rem;
     margin-bottom: 20px;
-    font-style: oblique;
 }
 
-.testimoni-header strong {
+.mengapa-toko-mekkah-header h1 {
+    font-size: 1.2rem;
+    color: var(--mainColor);
+    display: block;
+    width: 60%;
+}
+
+.mengapa-toko-mekkah-header strong {
     color: var(--textColor);
-    text-shadow: none;
+    font-weight: 650;
 }
 
-.testimoni-header p {
-    font-size: 0.85rem;
-    text-align: center;
-    font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.testimoni-content {
+.mengapa-toko-mekkah-main {
     display: flex;
     flex-direction: column;
+    gap: 15px 0;
     align-items: center;
-    gap: 100px 0;
-    margin-bottom: 30px;
 }
 
-.testimoni-content .testimoni-cards:nth-child(2) {
-    background-color: #323441;
-}
-
-.testimoni-cards {
+.mengapa-toko-mekkah-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+    font-family: "Raleway", sans-serif;
+    width: 95%;
     position: relative;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    padding: 15px 20px;
+}
+
+.mengapa-toko-mekkah-content-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #0d0907;
-    color: white;
-    box-shadow: var(--boxShadow);
-    border-radius: 10px;
-    padding: 55px 15px 30px 15px;
-    width: 90%;
+    gap: 0 8px;
 }
 
-.photo-profile {
-    background-image: url("assets/img/person.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px solid var(--mainTextColor);
-    height: 90px;
-    width: 90px;
-    position: absolute;
-    border-radius: 100%;
-    top: -15%;
+.mengapa-toko-mekkah-content.price img{
+    width: 25px;
 }
 
-.testimoni-cards #star {
-    color: white;
-    margin-bottom: 15px;
+.mengapa-toko-mekkah-content h1 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 1rem;
 }
 
-.testimoni-cards strong {
-    margin-bottom: 15px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-.testimoni-cards h1 {
-    font-family: "Raleway";
-}
-
-.testimoni-cards p {
-    font-size: 2rem;
-}
-
-.testimoni-cards-text p {
-    display: block;
-    font-family: "Manrope";
-    text-align: center;
-    width: 85%;
-    margin: auto;
-    font-size: 0.8rem;
-}
-
-.testimoni-cta a {
-    display: block;
-    text-decoration: none;
-    letter-spacing: 1px;
-    color: white;
-    margin: auto;
-    background-color: #4d423e;
-    padding: 10px;
-    border-radius: 8px;
-    transition: all 0.2s ease-in-out;
-}
-
-.testimoni-cta a:hover {
-    transform: scale(1.1);
+.mengapa-toko-mekkah-content p {
+    font-size: 0.875rem;
+    line-height: 20px;
 }
 
 /* Footer Section */
@@ -919,11 +857,6 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* Testimoni Section Di Hanphone Umum */
-    .testimoni-header h1 {
-        font-size: 1.25rem;
-    }
-
     /* Footer Section Di Handphone Umum */
     .about-text p {
         display: block;
@@ -977,19 +910,6 @@ footer {
 
     /* Toko Section di Handohne Sedang */
     .toko-cards {
-        width: 80%;
-    }
-
-    /* Testimoni Section Di Handphone Sedang */
-    .testimoni-header h1 {
-        font-size: 1.35rem;
-    }
-
-    .testimoni-header p {
-        font-size: 0.95rem;
-    }
-
-    .testimoni-cards {
         width: 80%;
     }
 
@@ -1126,22 +1046,6 @@ footer {
 
     .toko-cards {
         width: 85%;
-    }
-
-    /* Testimoni Section Di Handphone Besar */
-    .testimoni-header h1 {
-        font-size: 1.4rem;
-    }
-
-    .testimoni-header p {
-        font-size: 1rem;
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-
-    .testimoni-cards {
-        width: 60%;
     }
 
     /* Footer Secition Di Handphone Besar */
@@ -1284,63 +1188,6 @@ footer {
 
     .best-seller-cards-text a {
         width: max-content;
-    }
-
-    /* Testimoni Section Di Tablet*/
-    .testimoni-header h1 {
-        font-size: 1.6rem;
-    }
-
-    .testimoni-header p {
-        font-size: 1.15rem;
-        display: block;
-        width: 70%;
-        margin: auto;
-    }
-
-    .testimoni-content {
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    .testimoni-cards {
-        width: 30%;
-    }
-
-    .testimoni-cards h1 {
-        text-align: center;
-    }
-
-    .testimoni-content .testimoni-cards:first-child {
-        background-color: #323441;
-        order: 2;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(2) {
-        background-color: #0d0907;
-        order: 1;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(3) {
-        order: 3;
-    }
-
-    /* Testimoni Section Di Handphone Besar */
-    .testimoni-header h1 {
-        font-size: 1.4rem;
-    }
-
-    .testimoni-header p {
-        font-size: 1rem;
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-
-    .testimoni-cards {
-        width: 60%;
     }
 
     /* Footer Section Di Tablet */
@@ -1752,57 +1599,6 @@ footer {
 
     .toko-cards-text small {
         font-size: 0.85rem;
-    }
-
-    /* Testimoni Section Di Laptop*/
-    .testimoni {
-        align-items: center;
-    }
-
-    .testimoni-items {
-        width: 100%;
-    }
-
-    .testimoni-header h1 {
-        font-size: 1.6rem;
-    }
-
-    .testimoni-header p {
-        font-size: 1.25rem;
-        display: block;
-        width: 70%;
-        margin: auto;
-    }
-
-    .testimoni-content {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    .testimoni-cards {
-        width: 28%;
-    }
-
-    .testimoni-cards h1 {
-        text-align: center;
-    }
-
-    .testimoni-content .testimoni-cards:first-child {
-        order: 1;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(2) {
-        order: 2;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(3) {
-        order: 3;
-    }
-
-    .testimoni-cards-text p {
-        font-size: 1.1rem;
     }
 
     /* Footer Section Di Laptop*/
@@ -2229,66 +2025,6 @@ footer {
 
     .toko-cards-text small {
         font-size: 0.85rem;
-    }
-
-    /* Testimoni Section Di Desktop*/
-    .testimoni {
-        align-items: center;
-    }
-
-    .testimoni-items {
-        width: 100%;
-    }
-
-    .testimoni-header h1 {
-        font-size: 1.75rem;
-    }
-
-    .testimoni-header p {
-        font-size: 1.35rem;
-        display: block;
-        width: 70%;
-        margin: auto;
-    }
-
-    .testimoni-content {
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 0;
-    }
-
-    .testimoni-cards {
-        width: 28%;
-    }
-
-    .testimoni-cards h1 {
-        text-align: center;
-        font-size: 1.75rem;
-    }
-
-    .testimoni-cards strong {
-        font-size: 1rem;
-    }
-
-    .testimoni-cards-text p {
-        font-size: 1.25rem;
-    }
-
-    .testimoni-cta a {
-        font-size: 1.25rem;
-    }
-
-    .testimoni-content .testimoni-cards:first-child {
-        order: 1;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(2) {
-        order: 2;
-    }
-
-    .testimoni-content .testimoni-cards:nth-child(3) {
-        order: 3;
     }
 
     /* Footer Section Di Desktop*/
