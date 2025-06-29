@@ -401,6 +401,7 @@ nav img {
     font-family: "Poppins";
     font-weight: 550;
     font-style: oblique;
+    font-size: 1.5rem;
 }
 
 .best-seller strong {
@@ -411,7 +412,7 @@ nav img {
 .best-seller-header a {
     display: block;
     width: max-content;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-decoration: none;
     font-weight: 500;
     background-color: transparent;
@@ -458,7 +459,7 @@ nav img {
 }
 
 .best-seller-cards-text p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .best-seller-cards-text h1 {
@@ -478,7 +479,7 @@ nav img {
     gap: 0 5px;
     color: white;
     font-weight: 550;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-decoration: none;
     background-color: var(--textColor);
     padding: 5px;
@@ -511,7 +512,7 @@ nav img {
 .toko-header h1 {
     position: relative;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-left: 15px;
 }
 
@@ -527,8 +528,9 @@ nav img {
 
 .toko-header h2 {
     font-style: oblique;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .toko-header strong {
@@ -538,7 +540,7 @@ nav img {
 
 .toko-header p {
     font-family: "Raleway", sans-serief;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-align: center;
     display: block;
     width: 90%;
@@ -584,7 +586,7 @@ nav img {
 }
 
 .toko-cards-text h1 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -602,6 +604,7 @@ nav img {
     padding: 10px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
+    font-size: 0.75rem;
 }
 
 .toko-cards-text a:hover {
@@ -622,13 +625,13 @@ nav img {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Poppins", sans-serif;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .mengapa-toko-mekkah-header h1 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     color: var(--mainColor);
     display: block;
     width: 60%;
@@ -666,17 +669,17 @@ nav img {
     gap: 0 8px;
 }
 
-.mengapa-toko-mekkah-content.price img{
+.mengapa-toko-mekkah-content.price img {
     width: 25px;
 }
 
 .mengapa-toko-mekkah-content h1 {
     font-family: "Be Vietnam Pro", sans-serif;
-    font-size: 1rem;
+    font-size: 1.35rem;
 }
 
 .mengapa-toko-mekkah-content p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 20px;
 }
 
@@ -716,6 +719,7 @@ footer {
     font-weight: 550;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 1.35rem;
 }
 
 .footer-header-cta {
@@ -725,7 +729,7 @@ footer {
 
 .footer-header-cta a {
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     text-decoration: none;
     background-color: white;
     padding: 8px;
@@ -761,7 +765,7 @@ footer {
 }
 
 .about-text p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
 }
 
 .footer-second-items {
@@ -789,7 +793,7 @@ footer {
 .layanan-online h1,
 .kategori h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     margin-bottom: 25px;
 }
 
@@ -836,6 +840,7 @@ footer {
     text-decoration: none;
     color: rgb(233, 233, 233);
     font-weight: 500;
+    font-size: 0.75rem;
 }
 
 .footer-end {
@@ -1003,23 +1008,23 @@ footer {
     }
 
     .best-seller-title h1 {
-        font-size: 1.3rem;
+        font-size: 1.75rem;
     }
 
     .best-seller-title a {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .best-seller-cards-text a {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .best-seller-cards-text p {
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .best-seller-cards-text h1 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     .best-seller-cards-text img {
@@ -1028,31 +1033,48 @@ footer {
     }
 
     .best-seller-cards-text a {
-        font-size: 1.15rem;
+        font-size: 0.85rem;
     }
 
     /* Toko Section di Handphone Besar */
     .toko-header h1 {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
     }
 
     .toko-header h2 {
-        font-size: 1.4rem;
+        font-size: 1.75rem;
     }
 
     .toko-header p {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
 
     .toko-cards {
         width: 85%;
     }
 
+    /* Mengapa Toko Mekkah Section */
+    .mengapa-toko-mekkah-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .mengapa-toko-mekkah-content-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .mengapa-toko-mekkah-content p {
+        font-size: 0.85rem;
+    }
+
     /* Footer Secition Di Handphone Besar */
     .footer-header p {
         display: block;
         width: 85%;
-        font-size: 1.35rem;
+        font-size: 1.75rem;
+    }
+
+    .footer-header a {
+        font-size: 0.85rem;
     }
 
     .about img {
@@ -1066,7 +1088,7 @@ footer {
 
     .about-text p {
         width: 85%;
-        font-size: 1rem;
+        font-size: 0.85rem;
         margin-bottom: 20px;
     }
 
@@ -1074,19 +1096,19 @@ footer {
     .halaman h1,
     .layanan-online h1,
     .kategori h1 {
-        font-size: 1.55rem;
+        font-size: 1.75rem;
         margin-bottom: 25px;
     }
 
     .nomor-kontak p,
     .email p {
-        font-size: 1.25rem;
+        font-size: 0.85rem;
     }
 
     .halaman-items a,
     .layanan-online-items a,
     .kategori-items a {
-        font-size: 1.25rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -1166,16 +1188,16 @@ footer {
     }
 
     .best-seller-title p {
-        font-size: 1rem;
+        font-size: 1.25rem;
         font-weight: 500;
     }
 
     .best-seller-title h1 {
-        font-size: 1.35rem;
+        font-size: 1.95rem;
     }
 
     .lihat-selengkapnya a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .best-seller-cards {
@@ -1188,6 +1210,7 @@ footer {
 
     .best-seller-cards-text a {
         width: max-content;
+        font-size: 0.9rem;
     }
 
     /* Footer Section Di Tablet */
@@ -1207,12 +1230,12 @@ footer {
         display: block;
         width: 40%;
         text-align: left;
-        font-size: 1.35rem;
+        font-size: 1.95rem;
         letter-spacing: 0.8px;
     }
 
     .footer-header-cta a {
-        font-size: 1rem;
+        font-size: 0.9rem;
         border-radius: 17px;
     }
 
@@ -1236,7 +1259,7 @@ footer {
 
     .about-text p {
         width: 85%;
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 20px;
     }
 
@@ -1259,13 +1282,13 @@ footer {
     .halaman h1,
     .layanan-online h1,
     .kategori h1 {
-        font-size: 1.55rem;
+        font-size: 1.95rem;
         margin-bottom: 25px;
     }
 
     .nomor-kontak p,
     .email p {
-        font-size: 1.15rem;
+        font-size: 0.9rem;
     }
 
     .halaman-items a,
@@ -1274,7 +1297,7 @@ footer {
         text-decoration: none;
         color: rgb(233, 233, 233);
         font-weight: 500;
-        font-size: 1.15rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -1504,12 +1527,12 @@ footer {
     }
 
     .best-seller-title p {
-        font-size: 1rem;
+        font-size: 1.35rem;
         font-weight: 500;
     }
 
     .best-seller-title h1 {
-        font-size: 1.35rem;
+        font-size: 2rem;
     }
 
     .lihat-selengkapnya a {
@@ -1560,13 +1583,13 @@ footer {
     }
 
     .toko-header h2 {
-        font-size: 1.55rem;
+        font-size: 2rem;
     }
 
     .toko-header p {
         display: block;
         width: 80%;
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .toko-content {
@@ -1590,11 +1613,11 @@ footer {
     }
 
     .toko-cards-text h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .toko-cards-text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .toko-cards-text small {
@@ -1617,7 +1640,7 @@ footer {
         display: block;
         width: 30%;
         text-align: left;
-        font-size: 1.65rem;
+        font-size: 2rem;
         letter-spacing: 0.8px;
     }
 
@@ -1626,7 +1649,7 @@ footer {
     }
 
     .footer-header-cta a {
-        font-size: 1.15rem;
+        font-size: 1rem;
         border-radius: 17px;
         padding: 8px 10px;
     }
@@ -1647,7 +1670,7 @@ footer {
 
     .about-text p {
         width: 100%;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .footer-second-items {
@@ -1668,21 +1691,21 @@ footer {
     .halaman h1,
     .layanan-online h1,
     .kategori h1 {
-        font-size: 1.85rem;
+        font-size: 2rem;
     }
 
     .nomor-kontak p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .email p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .halaman-items a,
     .layanan-online-items a,
     .kategori-items a {
-        font-size: 1.25rem;
+        font-size: 1rem;
         transition: all 0.3s ease-in-out;
     }
 
@@ -1699,6 +1722,7 @@ footer {
         position: relative;
     }
 
+    /* Navbar Section on Laptop */
     .hamburger-menu {
         display: none;
     }
@@ -1706,7 +1730,6 @@ footer {
     nav {
         flex-wrap: nowrap;
         justify-content: space-between;
-        padding: 15px 25px;
     }
 
     .navbar-menu {
@@ -1738,6 +1761,10 @@ footer {
         top: 100%;
         transform: translateY(17px);
         transition: all 0.15s ease-in-out;
+        -webkit-transform: translateY(17px);
+        -moz-transform: translateY(17px);
+        -ms-transform: translateY(17px);
+        -o-transform: translateY(17px);
     }
 
     .dropdown-content.dropdown-hidden {
@@ -1780,13 +1807,13 @@ footer {
     }
 
     .hero-text h1 {
-        font-size: 2.5rem;
-        width: 60%;
+        font-size: 2.2rem;
+        width: 65%;
         line-height: 45px;
     }
 
     .hero-text p {
-        font-size: 1.253rem;
+        font-size: 1rem;
         width: 55%;
         letter-spacing: 1px;
     }
@@ -1817,7 +1844,7 @@ footer {
     }
 
     .pemesanan-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .pemesanan-menu {
@@ -1826,7 +1853,7 @@ footer {
 
     .pemesanan-menu a {
         display: block;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 0 0 10px 0;
         transition: all 0.2s ease-in;
     }
@@ -1837,17 +1864,12 @@ footer {
 
     /* Promo Section di Laptop */
     .promo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
     }
 
     .promo-card {
         justify-content: start;
         padding: 30px;
-        margin: 3rem 0 0 0;
-        width: 80%;
     }
 
     .promo-content p {
@@ -1873,20 +1895,17 @@ footer {
         background-color: #ffa500;
     }
 
-    /* Promo Section  */
     .promo-items {
         padding: 30px;
-        width: 80%;
     }
-
     .promo-items-text h1 {
         font-size: 1.3rem;
     }
 
     .promo-items-text h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         display: block;
-        max-width: 75%;
+        max-width: 80%;
     }
 
     .promo-items-text p {
@@ -1904,27 +1923,20 @@ footer {
         left: 0;
     }
 
-    .promo-items.promo-pop-up {
-        margin: 2rem 0;
-    }
-
-    /* Best Seller Di Desktop */
+    /* Best Seller Di Tablet */
     .best-seller {
-        padding: 60px 0px;
+        padding: 35px 0;
         display: flex;
         justify-content: center;
     }
 
     .best-seller-items {
-        width: 80%;
+        width: 90%;
     }
 
     .best-seller-header {
+        padding: 0;
         flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .best-seller-content {
         justify-content: space-between;
     }
 
@@ -1934,16 +1946,20 @@ footer {
     }
 
     .best-seller-title p {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
         font-weight: 500;
     }
 
     .best-seller-title h1 {
-        font-size: 1.55rem;
+        font-size: 2rem;
     }
 
     .lihat-selengkapnya a {
         font-size: 1rem;
+    }
+
+    .best-seller-content {
+        justify-content: space-between;
     }
 
     .best-seller-cards {
@@ -1972,7 +1988,7 @@ footer {
         transform: scale(1.1);
     }
 
-    /* Toko Section Di Desktop */
+    /* Toko Section di Laptop */
     .toko {
         padding: 45px 0;
     }
@@ -1986,13 +2002,13 @@ footer {
     }
 
     .toko-header h2 {
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     .toko-header p {
         display: block;
         width: 80%;
-        font-size: 1.15rem;
+        font-size: 1rem;
     }
 
     .toko-content {
@@ -2016,34 +2032,34 @@ footer {
     }
 
     .toko-cards-text h1 {
-        font-size: 1.4rem;
+        font-size: 2rem;
     }
 
     .toko-cards-text p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .toko-cards-text small {
         font-size: 0.85rem;
     }
 
-    /* Footer Section Di Desktop*/
+    /* Footer Section Di Laptop*/
     .footer-header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 90px;
+        padding: 30px 80px;
     }
 
     .footer-header::after {
-        width: 90%;
+        width: 87%;
     }
 
     .footer-header p {
         display: block;
         width: 30%;
         text-align: left;
-        font-size: 1.65rem;
+        font-size: 2rem;
         letter-spacing: 0.8px;
     }
 
@@ -2052,13 +2068,13 @@ footer {
     }
 
     .footer-header-cta a {
-        font-size: 1.15rem;
+        font-size: 1rem;
         border-radius: 17px;
         padding: 8px 10px;
     }
 
     .about {
-        padding-left: 90px;
+        padding-left: 80px;
         width: 60%;
     }
 
@@ -2073,43 +2089,43 @@ footer {
 
     .about-text p {
         width: 100%;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .footer-second-items {
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        padding: 40px 90px;
+        padding-left: 80px;
+    }
+
+    .contact,
+    .halaman,
+    .layanan-online,
+    .kategori {
+        width: 40%;
     }
 
     .contact h1,
     .halaman h1,
     .layanan-online h1,
     .kategori h1 {
-        font-size: 1.85rem;
+        font-size: 2rem;
     }
 
     .nomor-kontak p {
-        font-size: 1.35rem;
+        font-size: 1rem;
     }
 
     .email p {
-        font-size: 1.35rem;
-    }
-
-    .halaman-items {
-        gap: 15px 0;
+        font-size: 1rem;
     }
 
     .halaman-items a,
     .layanan-online-items a,
     .kategori-items a {
-        font-size: 1.35rem;
+        font-size: 1rem;
         transition: all 0.3s ease-in-out;
-    }
-
-    .layanan-online-items {
-        gap: 15px 0;
     }
 
     .halaman-items a:hover,
